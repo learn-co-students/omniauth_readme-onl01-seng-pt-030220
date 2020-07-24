@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20200724165934) do
     t.string   "name"
     t.string   "email"
     t.string   "image"
-    t.integer  "uid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "uid",        limit: 8
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
 end
